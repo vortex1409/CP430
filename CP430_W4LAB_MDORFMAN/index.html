@@ -1,0 +1,51 @@
+<!-- MICHAEL DORFMAN - CP430 W4 LAB -->
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <style>
+            .content
+            {
+                float:left;
+                width:400px;
+                margin:16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <h1>CP430 W4 LAB</h1>
+            <h3>Michael Dorfman</h3>
+            <hr>
+            <label for="Box1">Name:</label>
+            <input type="text" name="box1" id="box1" value="">
+            <label for="Box1">Desired Pet Type:</label>
+            <input type="text" name="box2" id="box2" value="">
+            <a href="#" class="ui-shadow ui-btn ui-corner-all save_link">Save</a>
+            <a href="#" class="ui-shadow ui-btn ui-corner-all fetch_link">Fetch</a>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('a.save_link').click(function() {
+                localStorage.setItem("name", document.getElementById("box1").value);
+                localStorage.setItem("animal", document.getElementById("box2").value);
+            });
+            
+            $('a.fetch_link').click(function() {
+                if(localStorage.getItem("name") !== null && localStorage.getItem("animal") !== null)
+                {
+                    document.getElementById("box1").value = localStorage.getItem("name");
+                    document.getElementById("box2").value = localStorage.getItem("animal");
+                }
+                else
+                {
+                    document.getElementById("box1").value = "";
+                    document.getElementById("box2").value = "";
+                }
+            });
+        });
+    </script>
+</html>

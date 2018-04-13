@@ -1,0 +1,246 @@
+<!-- MICHAEL DORFMAN - CP430 W4D2 LAB -->
+<html>
+    <head>
+        <title>CP430 - Week 4 Day 2</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="assets/jquery.mobile-1.4.5.min.css" />
+        <style>
+            tr
+            {
+                border-bottom: 1px solid black;
+            }
+            th
+            {
+                border-bottom: 1px solid black;
+            }
+            tr:nth-child(even)
+            {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body class="ui-mobile-viewport ui-overlay-a" style="" data-theme="b" data-content-theme="b">
+    <!-- Start of first page: #one -->
+        <div data-role="page" id="one" data-url="one" tabindex="0" class="ui-page ui-page-theme-b ui-page-active" style="" data-theme="b" data-content-theme="b">
+        	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        		<h1 class="ui-title" role="heading" aria-level="1">End of jQuery Mobile</h1>
+        	</div><!-- /header -->
+        
+        	<div role="main" class="ui-content">
+        	    <div data-role="collapsible">
+        	        <h4>Animal List With Search</h4>
+            	    <form class="ui-filterable">
+    					<input id="search" data-type="search" placeholder="Search List">
+    				</form>			
+    				<div id="alist">
+        				<ul data-role="listview" data-filter="true" data-input="#search" data-autodividers="true">
+        					<li data-name="Allenopithecus"><a href="#">Allenopithecus</a></li>
+        					<li data-name="Allocebus"><a href="#">Allocebus</a></li>
+        					<li data-name="Allochrocebus"><a href="#">Allochrocebus</a></li>
+        					<li data-name="Alouatta"><a href="#">Alouatta</a></li>
+        					<li data-name="Aotus"><a href="#">Aotus</a></li>
+        					<li data-name="Arctocebus"><a href="#">Arctocebus</a></li>
+        					<li data-name="Ateles"><a href="#">Ateles</a></li>
+        					<li data-name="Brachyteles"><a href="#">Brachyteles</a></li>
+        					<li data-name="Cacajao"><a href="#">Cacajao</a></li>
+        					<li data-name="Callibella"><a href="#">Callibella</a></li>
+        					<li data-name="Callicebus"><a href="#">Callicebus</a></li>
+        					<li data-name="Callimico"><a href="#">Callimico</a></li>
+        					<li data-name="Callithrix"><a href="#">Callithrix</a></li>
+        					<li data-name="Carlito"><a href="#">Carlito</a></li>
+        					<li data-name="Cebuella"><a href="#">Cebuella</a></li>
+        					<li data-name="Cebus"><a href="#">Cebus</a></li>
+        					<li data-name="Cephalopachus"><a href="#">Cephalopachus</a></li>
+        					<li data-name="Cercocebus"><a href="#">Cercocebus</a></li>
+        					<li data-name="Cheirogaleus"><a href="#">Cheirogaleus</a></li>
+        					<li data-name="Chiropotes"><a href="#">Chiropotes</a></li>
+        					<li data-name="Chlorocebus"><a href="#">Chlorocebus</a></li>
+        					<li data-name="Colobus"><a href="#">Colobus</a></li>
+        					<li data-name="Daubentonia"><a href="#">Daubentonia</a></li>
+        					<li data-name="Erythrocebus"><a href="#">Erythrocebus</a></li>
+        					<li data-name="Eulemur"><a href="#">Eulemur</a></li>
+        					<li data-name="Euoticus"><a href="#">Euoticus</a></li>
+        					<li data-name="Galago"><a href="#">Galago</a></li>
+        					<li data-name="Gorilla"><a href="#">Gorilla</a></li>
+        					<li data-name="Hapalemur"><a href="#">Hapalemur</a></li>
+        					<li data-name="Homo"><a href="#">Homo</a></li>
+        					<li data-name="Hoolock"><a href="#">Hoolock</a></li>
+        					<li data-name="Hylobates"><a href="#">Hylobates</a></li>
+        					<li data-name="Indri"><a href="#">Indri</a></li>
+        					<li data-name="Lagothrix"><a href="#">Lagothrix</a></li>
+        					<li data-name="Lemur"><a href="#">Lemur</a></li>
+        					<li data-name="Leontopithecus"><a href="#">Leontopithecus</a></li>
+        					<li data-name="Lepilemur"><a href="#">Lepilemur</a></li>
+        					<li data-name="Lophocebus"><a href="#">Lophocebus</a></li>
+        					<li data-name="Loris"><a href="#">Loris</a></li>
+        					<li data-name="Macaca"><a href="#">Macaca</a></li>
+        					<li data-name="Mandrillus"><a href="#">Mandrillus</a></li>
+        					<li data-name="Mico"><a href="#">Mico</a></li>
+        					<li data-name="Microcebus"><a href="#">Microcebus</a></li>
+        					<li data-name="Miopithecus"><a href="#">Miopithecus</a></li>
+        					<li data-name="Mirza"><a href="#">Mirza</a></li>
+        					<li data-name="Nasalis"><a href="#">Nasalis</a></li>
+        					<li data-name="Nomascus"><a href="#">Nomascus</a></li>
+        					<li data-name="Nycticebus"><a href="#">Nycticebus</a></li>
+        					<li data-name="Pongo"><a href="#">Pongo</a></li>
+        					<li data-name="Oreonax"><a href="#">Oreonax</a></li>
+        					<li data-name="Otolemur"><a href="#">Otolemur</a></li>
+        					<li data-name="Pan"><a href="#">Pan</a></li>
+        					<li data-name="Papio"><a href="#">Papio</a></li>
+        					<li data-name="Perodicticus"><a href="#">Perodicticus</a></li>
+        					<li data-name="Phaner"><a href="#">Phaner</a></li>
+        					<li data-name="Piliocolobus"><a href="#">Piliocolobus</a></li>
+        					<li data-name="Pithecia"><a href="#">Pithecia</a></li>
+        					<li data-name="Presbytis"><a href="#">Presbytis</a></li>
+        					<li data-name="Procolobus"><a href="#">Procolobus</a></li>
+        					<li data-name="Prolemur"><a href="#">Prolemur</a></li>
+        					<li data-name="Propithecus"><a href="#">Propithecus</a></li>
+        					<li data-name="Pseudopotto"><a href="#">Pseudopotto</a></li>
+        					<li data-name="Pygathrix"><a href="#">Pygathrix</a></li>
+        					<li data-name="Rhinopithecus"><a href="#">Rhinopithecus</a></li>
+        					<li data-name="Rungwecebus"><a href="#">Rungwecebus</a></li>
+        					<li data-name="Saguinus"><a href="#">Saguinus</a></li>
+        					<li data-name="Saimiri"><a href="#">Saimiri</a></li>
+        					<li data-name="Scuirocheirus"><a href="#">Scuirocheirus</a></li>
+        					<li data-name="Semnopithecus"><a href="#">Semnopithecus</a></li>
+        					<li data-name="Simias"><a href="#">Simias</a></li>
+        					<li data-name="Symphalangus"><a href="#">Symphalangus</a></li>
+        					<li data-name="Tarsius"><a href="#">Tarsius</a></li>
+        					<li data-name="Theropithecus"><a href="#">Theropithecus</a></li>
+        					<li data-name="Trachypithecus"><a href="#">Trachypithecus</a></li>
+        					<li data-name="Varecia"><a href="#">Varecia</a></li>						
+        				</ul>
+        			</div>
+				</div>
+				<input type="date" data-clear-btn="false" name="date-1" id="date-1" value="">
+				
+				<input type="number" data-clear-btn="false" name="number-1" id="number-1" value="">
+				
+				
+				<div data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
+				    <div class="ui-controlgroup-controls">
+			            <a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-left record">Add Record</a>
+			            <a href="#" class="ui-btn ui-btn-inline ui-icon-plus ui-btn-icon-left save">Save Record</a>
+			            <a href="#" class="ui-btn ui-btn-inline ui-icon-recycle ui-btn-icon-right load">Load Record</a>
+		            </div>
+                </div>
+				
+				<div data-role="controlgroup" data-type="horizontal" class="ui-corner-all ui-controlgroup ui-controlgroup-horizontal">
+				    <div class="ui-controlgroup-controls">
+			            <a href="#" class="ui-btn ui-btn-inline ui-icon-alert ui-btn-icon-left surprise">Surprise</a>
+			            <a href="#cpanel" class="ui-btn ui-btn-inline ui-icon-user ui-btn-icon-right">Panel</a>
+		            </div>
+                </div>
+				
+				<table data-role="table" style="color:white;" data-mode="columntoggle" class="ui-responsive ui-shadow" data-column-btn-text="Column Toggle" id="animalcount">
+        	        <thead>
+        	            <th data-priority="1">Animal</th>
+        	            <th data-priority="2">Date Observed</th>
+        	            <th data-priority="3">Count</th>
+        	        </thead>
+        	        <tbody>
+        	        </tbody>
+        	    </table>
+        	    
+        	    <div data-role="panel" data-display="overlay" id="cpanel">
+                    <h1>Details</h1>
+                    <label for="firstname">First Name:</label>
+                    <input id="firstname" type="text" name="firstname"/>
+                    <label for="lastname">Last Name:</label>
+                    <input id="lastname" type="text" name="lastname"/>
+                    <label for="dept">Department:</label>
+                    <input id="dept" type="text" name="department"/>
+                    <a href="#" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-left save_details">Save Data</a>
+                </div>
+        	</div><!-- /content -->
+        	<div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-b" data-position="fixed" data-theme="b" data-content-theme="b"> 
+        		<h1 class="ui-title" role="heading" aria-level="1" data-theme="b" data-content-theme="b">Too Much Work</h1>
+        	</div><!-- /footer -->
+        </div><!-- /page one -->
+    </body>
+    <script src="assets/jquery-1.11.1.min.js"></script>
+    <script src="assets/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            load_panel_data();
+            var animalname = "";
+            $('#alist ul').children('li').bind('touchstart mousedown', function(e) {
+                animalname = $(this).attr('data-name');
+            });
+            $('a.record').click(function() {
+                var table = document.getElementById("animalcount");
+                var row = table.insertRow(1);
+                var animal = row.insertCell(0);
+                var dateobs = row.insertCell(1);
+                var acount = row.insertCell(2);
+                animal.innerHTML = animalname;
+                dateobs.innerHTML = document.getElementById("date-1").value;
+                acount.innerHTML = document.getElementById("number-1").value;
+            });
+            $('a.save').click(function() {
+                if(localStorage.getItem("count"))
+                {
+                    localStorage.setItem("count", Number(localStorage.getItem("count")) + 1);
+                    localStorage.setItem(Number(localStorage.getItem("count")) + "animalname", animalname);
+                    localStorage.setItem(Number(localStorage.getItem("count")) + "date", document.getElementById("date-1").value);
+                    localStorage.setItem(Number(localStorage.getItem("count")) + "counter", document.getElementById("number-1").value);
+                }
+                else
+                {
+                    localStorage.setItem("count", 1);
+                }
+            });
+            $('a.load').click(function() {
+                var i;
+                var table = document.getElementById("animalcount");
+                for(i = 1; i <= Number(localStorage.getItem("count")); i++)
+                {
+                    var row = table.insertRow(i);
+                    var animal = row.insertCell(0);
+                    var dateobs = row.insertCell(1);
+                    var acount = row.insertCell(2);
+                    var fname = i +"animalname";
+                    var fdate = i + "date";
+                    var fcount = i + "counter";
+                    animal.innerHTML = localStorage.getItem(fname);
+                    dateobs.innerHTML = localStorage.getItem(fdate);
+                    acount.innerHTML = localStorage.getItem(fcount);
+                }
+            });
+            $('a.clr').click(function() {
+                localStorage.setItem("count", 0);
+            });
+            $('a.save_details').click(function() {
+                localStorage.setItem("firstname", $("#firstname").val());
+                localStorage.setItem("lastname", $("#lastname").val());
+                localStorage.setItem("dept", $("#dept").val());
+            });
+            $('a.surprise').click(function() {
+                if(sessionStorage.count)
+                {
+                    sessionStorage.count = Number(sessionStorage.count) + 1;
+                }
+                else 
+                {
+                    sessionStorage.count = 1;
+                }
+                alert("You mashed that button with your face " + sessionStorage.count + " times! WOW!");
+            });
+            function load_panel_data()
+            {
+                if(localStorage.firstname && localStorage.lastname && localStorage.dept)
+                {
+                    $("#firstname").val(localStorage.getItem("firstname"));
+                    $("#lastname").val(localStorage.getItem("lastname"));
+                    $("#dept").val(localStorage.getItem("dept"));
+                }
+                else
+                {
+                    $("#firstname").val("");
+                    $("#lastname").val("");
+                    $("#dept").val("");
+                }
+            }
+        });
+    </script>
+</html>

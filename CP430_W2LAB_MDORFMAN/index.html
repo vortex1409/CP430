@@ -1,0 +1,183 @@
+<!-- MICHAEL DORFMAN - CP430 W2 LAB -->
+<html>
+    <head>
+        <title>CP430 - Week 2</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    </head>
+    <body class="ui-mobile-viewport ui-overlay-a" style="">
+    <!-- Start of first page: #one -->
+        <div data-role="page" id="one" data-url="one" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="">
+            
+            <div data-role="panel" id="hero_panel" data-display="push" data-position="right">
+                <h3>Character Setup</h3>
+                <div data-role="collapsible">
+                    <h4>Hair</h4>
+                    <div data-role="collapsible">
+                        <h4>Length</h4>
+                        <form id="hair_length">
+                            <fieldset>
+                                <input type="radio" name="l1" id="rb_bald" value="off"></input>
+                                <label for="rb_bald">Bald</label>
+                                
+                                <input type="radio" name="l1" id="rb_short" value="off"></input>
+                                <label for="rb_short">Short</label>
+                                
+                                <input type="radio" name="l1" id="rb_med" value="off"></input>
+                                <label for="rb_med">Medium</label>
+                                
+                                <input type="radio" name="l1" id="rb_long" value="off"></input>
+                                <label for="rb_long">Long</label>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div data-role="collapsible">
+                        <h4>Color</h4>
+                        <form id="hair_color">
+                            <fieldset>
+                                <input type="radio" name="c1" id="rd_blue" value="off"></input>
+                                <label for="rd_blue">Blue</label>
+                                
+                                <input type="radio" name="c1" id="rd_green" value="off"></input>
+                                <label for="rd_green">Green</label>
+                                
+                                <input type="radio" name="c1" id="rd_other" value="off"></input>
+                                <label for="rd_other">Etc...</label>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h4>Sex</h4>
+                    <form id="sex">
+                        <fieldset>
+                            <input type="radio" name="g1" id="rb_male" value="off"></input>
+                            <label for="rb_male">Male</label>
+                                
+                            <input type="radio" name="g1" id="rb_female" value="off"></input>
+                            <label for="rb_female">Female</label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div data-role="collapsible">
+                    <h4>Race</h4>
+                    <form id="race">
+                        <fieldset>
+                            <input type="radio" name="r1" id="rb_orc" value="off"></input>
+                            <label for="rb_orc">Orc</label>
+                        
+                            <input type="radio" name="r1" id="rb_elf" value="off"></input>
+                            <label for="rb_elf">Elf</label>
+                        
+                            <input type="radio" name="r1" id="rb_gnome" value="off"></input>
+                            <label for="rb_gnome">Gnome</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div><!-- /panel -->
+            
+        	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        		<h1 class="ui-title" role="heading" aria-level="1">CP430 - Week 2</h1>
+        		<a href="#two" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-inline">Goto Page 2</a>
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one" class="ui-btn-active ui-state-persist">Home</a></li>
+                        <li><a href="#two">Books</a></li>
+                        <li><a href="#three">Hobbies</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /header -->
+        
+        	<div role="main" class="ui-content">
+        		<h2>First Page</h2>
+                <p>Michael Dorfman | Thunder Bay</p>
+                <a href="#hero_panel" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Character Setup</a>
+        	</div><!-- /content -->
+        	<div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a" data-position="fixed">
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one" data-icon="home" data-transition="slidedown">Home</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /footer -->
+        </div><!-- /page one -->
+        
+        <!-- Start of second page: #two -->
+        <div data-role="page" id="two" data-theme="a" data-url="two" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 637px;">
+        
+        	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        		<a href="javascript:history.back()" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-inline">Back to Page 1</a>
+        		<h1 class="ui-title" role="heading" aria-level="1">Books</h1>
+        		<a href="#three" data-transition="flip" class="ui-btn ui-icon-arrow-l ui-btn-inline">Goto Page 3</a>
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one">Home</a></li>
+                        <li><a href="#two" class="ui-btn-active ui-state-persist">Books</a></li>
+                        <li><a href="#three">Hobbies</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /header -->
+        
+        	<div role="main" class="ui-content">
+        		<p>
+        		    List of Books<br />
+        		    <ul>
+        		        <li>The Lost Symbol</li>
+        		        <li>EndWar</li>
+        		        <li>Seed</li>
+        		    </ul>
+        		</p>
+        	</div><!-- /content -->
+        
+        	<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit" data-position="fixed">
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one" data-icon="home" data-transition="slidedown">Home</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /footer -->
+        </div><!-- /page two -->
+        
+        <!-- Start of second page: #three -->
+        <div data-role="page" id="three" data-theme="a" data-url="three" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 637px;">
+        
+        	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        	    <a href="javascript:history.back()" data-transition="slide" class="ui-btn ui-icon-arrow-l ui-btn-inline">Back to Page 2</a>
+        		<h1 class="ui-title" role="heading" aria-level="1">Hobbies</h1>
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one">Home</a></li>
+                        <li><a href="#two">Books</a></li>
+                        <li><a href="#three" class="ui-btn-active ui-state-persist">Hobbies</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /header -->
+        
+        	<div role="main" class="ui-content">
+        		<h2>Three</h2>
+        		<p>
+        		    List of Hobbies<br />
+        		    <ul>
+        		        <li>Programming</li>
+        		        <li>Video Games</li>
+        		    </ul>
+        		</p>
+        	</div><!-- /content -->
+        
+        	<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit" data-position="fixed">
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one" data-icon="home" data-transition="slidedown">Home</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /footer -->
+        </div><!-- /page three -->
+        
+        <div class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+            <span class="ui-icon-loading"></span>
+            <h1>loading</h1>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</html>

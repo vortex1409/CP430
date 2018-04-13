@@ -1,0 +1,300 @@
+<!-- MICHAEL DORFMAN - CP430 W3 LAB -->
+<html>
+    <head>
+        <title>CP430 - Week 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <style>
+            tr
+            {
+                border-bottom: 1px solid black;
+            }
+            th
+            {
+                border-bottom: 1px solid black;
+            }
+            tr:nth-child(even)
+            {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body class="ui-mobile-viewport ui-overlay-a" style="">
+    <!-- Start of first page: #one -->
+        <div data-role="page" id="one" data-url="one" tabindex="0" class="ui-page ui-page-theme-a ui-page-active" style="">
+        	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        		<h1 class="ui-title" role="heading" aria-level="1">Week 3 - Tables</h1>
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one" class="ui-btn-active ui-state-persist">Table</a></li>
+                        <li><a href="#two">Lists</a></li>
+                        <li><a href="#three">Forms</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /header -->
+        
+        	<div role="main" class="ui-content">
+        	    <table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" data-column-btn-text="Column Toggle" id="students">
+        	        <thead>
+        	            <th data-priority="1">Name</th>
+        	            <th data-priority="5">Age</th>
+        	            <th data-priority="2">Major</th>
+        	            <th data-priority="3">Home City</th>
+        	            <th data-priority="persist">Student ID</th>
+        	            <th data-priority="4">Residence Name</th>
+        	        </thead>
+        	        <tbody>
+        	            <tr>
+        	                <td>Michael</td>
+        	                <td>26</td>
+        	                <td>Engineering</td>
+        	                <td>Thunder Bay</td>
+        	                <td>123456789</td>
+        	                <td>Aurora</td>
+        	            </tr>
+        	            <tr>
+        	                <td>Alexandria</td>
+        	                <td>23</td>
+        	                <td>Engineering</td>
+        	                <td>North Bay</td>
+        	                <td>753159852</td>
+        	                <td>Boreal</td>
+        	            </tr>
+        	            <tr>
+        	                <td>Ashlyn</td>
+        	                <td>32</td>
+        	                <td>Arts</td>
+        	                <td>Perth</td>
+        	                <td>654852951</td>
+        	                <td>Aurora</td>
+        	            </tr>
+        	            <tr>
+        	                <td>Luxmira</td>
+        	                <td>27</td>
+        	                <td>Cosmetics</td>
+        	                <td>Toronto</td>
+        	                <td>123789456</td>
+        	                <td>Boreal</td>
+        	            </tr>
+        	            <tr>
+        	                <td>Teno</td>
+        	                <td>35</td>
+        	                <td>Services</td>
+        	                <td>Construction</td>
+        	                <td>987654321</td>
+        	                <td>Boreal</td>
+        	            </tr>
+        	        </tbody>
+        	    </table>
+        	</div><!-- /content -->
+        	<div data-role="footer" data-theme="a" role="contentinfo" class="ui-footer ui-bar-a" data-position="fixed">
+        		<h1 class="ui-title" role="heading" aria-level="1">Michael Dorfman</h1>
+        	</div><!-- /footer -->
+        </div><!-- /page one -->
+        
+        <!-- Start of second page: #two -->
+        <div data-role="page" id="two" data-theme="a" data-url="two" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 637px;">
+        	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        		<h1 class="ui-title" role="heading" aria-level="1">List</h1>
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one">Table</a></li>
+                        <li><a href="#two" class="ui-btn-active ui-state-persist">Lists</a></li>
+                        <li><a href="#three">Forms</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /header -->
+        	<div role="main" class="ui-content">
+        		<form class="ui-filterable">
+					<input id="search" data-type="search" placeholder="Search List">
+				</form>				
+				<ul data-role="listview" data-filter="true" data-input="#search" data-autodividers="true">
+					<li><a href="#">Allenopithecus</a></li>
+					<li><a href="#">Allocebus</a></li>
+					<li><a href="#">Allochrocebus</a></li>
+					<li><a href="#">Alouatta</a></li>
+					<li><a href="#">Aotus</a></li>
+					<li><a href="#">Arctocebus</a></li>
+					<li><a href="#">Ateles</a></li>
+					<li><a href="#">Brachyteles</a></li>
+					<li><a href="#">Cacajao</a></li>
+					<li><a href="#">Callibella</a></li>
+					<li><a href="#">Callicebus</a></li>
+					<li><a href="#">Callimico</a></li>
+					<li><a href="#">Callithrix</a></li>
+					<li><a href="#">Carlito</a></li>
+					<li><a href="#">Cebuella</a></li>
+					<li><a href="#">Cebus</a></li>
+					<li><a href="#">Cephalopachus</a></li>
+					<li><a href="#">Cercocebus</a></li>
+					<li><a href="#">Cheirogaleus</a></li>
+					<li><a href="#">Chiropotes</a></li>
+					<li><a href="#">Chlorocebus</a></li>
+					<li><a href="#">Colobus</a></li>
+					<li><a href="#">Daubentonia</a></li>
+					<li><a href="#">Erythrocebus</a></li>
+					<li><a href="#">Eulemur</a></li>
+					<li><a href="#">Euoticus</a></li>
+					<li><a href="#">Galago</a></li>
+					<li><a href="#">Gorilla</a></li>
+					<li><a href="#">Hapalemur</a></li>
+					<li><a href="#">Homo</a></li>
+					<li><a href="#">Hoolock</a></li>
+					<li><a href="#">Hylobates</a></li>
+					<li><a href="#">Indri</a></li>
+					<li><a href="#">Lagothrix</a></li>
+					<li><a href="#">Lemur</a></li>
+					<li><a href="#">Leontopithecus</a></li>
+					<li><a href="#">Lepilemur</a></li>
+					<li><a href="#">Lophocebus</a></li>
+					<li><a href="#">Loris</a></li>
+					<li><a href="#">Macaca</a></li>
+					<li><a href="#">Mandrillus</a></li>
+					<li><a href="#">Mico</a></li>
+					<li><a href="#">Microcebus</a></li>
+					<li><a href="#">Miopithecus</a></li>
+					<li><a href="#">Mirza</a></li>
+					<li><a href="#">Nasalis</a></li>
+					<li><a href="#">Nomascus</a></li>
+					<li><a href="#">Nycticebus</a></li>
+					<li><a href="#">Pongo</a></li>
+					<li><a href="#">Oreonax</a></li>
+					<li><a href="#">Otolemur</a></li>
+					<li><a href="#">Pan</a></li>
+					<li><a href="#">Papio</a></li>
+					<li><a href="#">Perodicticus</a></li>
+					<li><a href="#">Phaner</a></li>
+					<li><a href="#">Piliocolobus</a></li>
+					<li><a href="#">Pithecia</a></li>
+					<li><a href="#">Presbytis</a></li>
+					<li><a href="#">Procolobus</a></li>
+					<li><a href="#">Prolemur</a></li>
+					<li><a href="#">Propithecus</a></li>
+					<li><a href="#">Pseudopotto</a></li>
+					<li><a href="#">Pygathrix</a></li>
+					<li><a href="#">Rhinopithecus</a></li>
+					<li><a href="#">Rungwecebus</a></li>
+					<li><a href="#">Saguinus</a></li>
+					<li><a href="#">Saimiri</a></li>
+					<li><a href="#">Scuirocheirus</a></li>
+					<li><a href="#">Semnopithecus</a></li>
+					<li><a href="#">Simias</a></li>
+					<li><a href="#">Symphalangus</a></li>
+					<li><a href="#">Tarsius</a></li>
+					<li><a href="#">Theropithecus</a></li>
+					<li><a href="#">Trachypithecus</a></li>
+					<li><a href="#">Varecia</a></li>						
+				</ul>
+        	</div><!-- /content -->
+        
+        	<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit" data-position="fixed">
+        		<div data-role="navbar">
+                    <ul>
+                        <h1 class="ui-title" role="heading" aria-level="1">Michael Dorfman</h1>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /footer -->
+        </div><!-- /page two -->
+        
+        <!-- Start of second page: #three -->
+        <div data-role="page" id="three" data-theme="a" data-url="three" tabindex="0" class="ui-page ui-page-theme-a" style="min-height: 637px;">
+        	<div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+        		<h1 class="ui-title" role="heading" aria-level="1">Fitness Form</h1>
+        		<div data-role="navbar">
+                    <ul>
+                        <li><a href="#one">Table</a></li>
+                        <li><a href="#two">Lists</a></li>
+                        <li><a href="#three" class="ui-btn-active ui-state-persist">Forms</a></li>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /header -->
+        	<div role="main" class="ui-content">
+        		<form>
+        			<label for="weight">Weight</label>
+        			<input type="range" name="weight" id="weight" value="0" min="0" max="800">
+        			<fieldset data-role="controlgroup">
+						<legend>How Do You Feel?:</legend>
+						<input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+						<label for="checkbox-1a">Tired</label>
+						<input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+						<label for="checkbox-2a">Sore</label>
+						<input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+						<label for="checkbox-3a">Energetic</label>
+						<input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+						<label for="checkbox-4a">Pain</label>
+						<input type="checkbox" name="checkbox-5a" id="checkbox-5a">
+						<label for="checkbox-5a">Okay</label>
+					</fieldset>
+					<div data-role="rangeslider">
+						<label for="range-1a">Optimal Weight:</label>
+						<input type="range" name="range-1a" id="range-1a" min="0" max="800" value="150">
+						<label for="range-1b">Optimal Weight:</label>
+						<input type="range" name="range-1b" id="range-1b" min="0" max="800" value="180">
+					</div>
+					<label for="weight">Pick an Activity</label>
+					<select name="acc_select" id="acc">
+            			<optgroup label="Cardio">
+            				<option value="running">Running</option>
+                			<option value="biking">Biking</option>
+                			<option value="swimming">Swimming</option>
+            			</optgroup>
+			            <optgroup label="Weight">
+			                <option value="squats">Squating</option>
+			                <option value="lifting">Lifting</option>
+			                <option value="stretch">Stretch</option>
+			            </optgroup>
+        			</select>
+        			<a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop" data-theme="b">Click Me!</a>
+					<div data-role="popup" id="popupBasic" data-theme="b">
+						<p>I would rather be anywhere but here… Tahiti, Australia, Antarctica…</p>
+					</div>
+        		</form>
+        	</div><!-- /content -->
+        
+        	<div data-role="footer" role="contentinfo" class="ui-footer ui-bar-inherit" data-position="fixed">
+        		<div data-role="navbar">
+                    <ul>
+                        <h1 class="ui-title" role="heading" aria-level="1">Michael Dorfman</h1>
+                    </ul>
+                </div><!-- /navbar -->
+        	</div><!-- /footer -->
+        </div><!-- /page three -->
+        
+        <div class="ui-loader ui-corner-all ui-body-a ui-loader-default">
+            <span class="ui-icon-loading"></span>
+            <h1>loading</h1>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script>
+    	$(document).on('pageinit', "#three", function(){
+			window.alert("Page Is Ready For Use");
+		});
+    
+		$(document).on("pagecreate","#one",function(){
+			$("body").on("swipeleft",function(){
+				window.alert("Functionality Is Not Finished Yet");
+			});
+			$("body").on("swiperight",function(){
+				window.alert("Information Has Been Saved To The Server");
+			});
+		});
+		
+		$( window ).on( "orientationchange", function( event ) {
+			if(event.orientation === "landscape")
+			{
+				$('h1').css('background-color', 'orange');
+			}
+			else if(event.orientation === "portrait")
+			{
+				$('h1').css('background-color', 'green');
+			}
+			else
+			{
+				window.alert("UNKNOWN ORIENTATION");
+			}
+		});
+		$( window ).orientationchange();
+	</script>
+</html>
